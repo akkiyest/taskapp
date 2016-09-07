@@ -44,7 +44,7 @@ class InputViewController: UIViewController {
             self.task.date = self.datePicker.date
             self.realm.add(self.task, update: true)
         }
-        
+        setNotification(self.task)
         super.viewWillDisappear(animated)
     }
     
